@@ -23,7 +23,7 @@ public class Search implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Enter.theValue(searchTerm)
-                     .into(SearchBox.SEARCH_FIELD)
+                     .into(SearchBox.BUTTON_SEARCH)
                      .thenHit(ENTER)
         );
     }
